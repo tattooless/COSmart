@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async{
   runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized()
+  await Firebase.initializeApp(); 
 }
 
 class MyApp extends StatelessWidget {
